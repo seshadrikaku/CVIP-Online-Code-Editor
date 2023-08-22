@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Compiler</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/edaf8e3742.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="mb-4">
+    <h1 class="heading text-center fw-bold">CODE EDITOR</h1>
+    <hr>
+    <div class="container-fluid px-5 shadow" id="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 ">
+                <div class="html">
+                    <div class="d-flex  py-1">
+                        <p class="p mx-auto">HTML</p>
+                    </div>
+                    <textarea class="w-100" rows="10" id="html-edit" onkeyup="run()">
+                    <html>
+                    <head>
+                    <title> </title>
+                    </head>
+                    <body>
+                     <h1>Hello World...!</h1>
+                    </body>
+                    </html>
+            </textarea>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 ">
+                <div class="css">
+                    <div class="d-flex py-1 ">
+                        <p class="p mx-auto">CSS</p>
+                    </div>
+                    <textarea class="w-100" rows="10" id="css-edit" onkeyup="run()">
+                h1{
+                    color:red;
+                }
+                </textarea>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 ">
+                <div class="js">
+                    <div class="d-flex py-1">
+                        <p class="p mx-auto">JAVASCRIPT</p>
+                    </div>
+                    <textarea class="w-100" rows="10" id="js-edit" onkeyup="run()">
+                document.write("Hello")
+                </textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row py-3">
+            <div class="col-12 mt-3 py-3">
+                <div class="d-flex ">
+                    <p class="fw-bold">OUTPUT</p>
+                </div>
+                <iframe id="output"></iframe>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
